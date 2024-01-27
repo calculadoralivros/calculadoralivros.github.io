@@ -32,8 +32,6 @@ input {
     width: 80%;
     max-width: 300px;
     min-width: 50px;
-    border: 10px; /* Added border all around */
-    box-sizing: border-box; /* Ensure that the border is included in the width */
 }
 
 
