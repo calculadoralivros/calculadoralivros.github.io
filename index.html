@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Correio Editorial Nacional - Livros</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
+       body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box; /* Add this line */
+}
+
+* {
+    box-sizing: border-box; /* Add this line to apply box-sizing to all elements */
+}
 
         h1 {
             color: #333;
@@ -61,25 +66,27 @@
         }
 
         /* New styles for image container */
-        .image-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
+       .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
 
-        .image-container img {
-            width: 70px; /* Adjust the width as needed */
-            height: auto;
-        }
+.image-container img {
+    width: 70px; /* Adjust the width as needed */
+    height: auto;
+    max-height: 100px; /* Add this line to set a maximum height for the images */
+}
 
-        /* Media query for small screens */
-        @media screen and (max-width: 600px) {
-            input {
-                width: 100%;
-                max-width: none;
-            }
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+    input {
+        width: 100%;
+        max-width: none;
+    }
+}
         }
     </style>
 </head>
