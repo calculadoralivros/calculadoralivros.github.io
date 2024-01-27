@@ -57,6 +57,19 @@
             margin-top: 20px;
             color: #666;
         }
+
+        /* New styles for image container */
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%; /* Adjust the width as needed */
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 100px; /* Adjust the width as needed */
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -66,6 +79,20 @@
     <button onclick="calculate()">Calcular</button>
     <p id="custo"></p>
     <p class="disclaimer">Precário atualizado a 26 de janeiro 2024</p>
+
+    <!-- Image container placeholder -->
+    <div class="image-container">
+        <a href="https://tradestories.pt/danielsilva/livro/lendas-e-narrativas-0"><img src="IMG_9883.jpg" alt="Image 1"></a>
+        <a href="https://tradestories.pt/danielsilva/livro/african-psycho"><img src="IMG_9887.jpg" alt="Image 2"></a>
+        <a href="image3_link"><img src="path/to/image3.jpg" alt="Image 3"></a>
+        <a href="image4_link"><img src="path/to/image4.jpg" alt="Image 4"></a>
+        <a href="image5_link"><img src="path/to/image5.jpg" alt="Image 5"></a>
+		<a href="image6_link"><img src="path/to/image6.jpg" alt="Image 3"></a>
+        <a href="image7_link"><img src="path/to/image7.jpg" alt="Image 4"></a>
+        <a href="image8_link"><img src="path/to/image8.jpg" alt="Image 5"></a>
+		<a href="image9_link"><img src="path/to/image9.jpg" alt="Image 4"></a>
+        <a href="image10_link"><img src="path/to/image10.jpg" alt="Image 5"></a>
+    </div>
 
     <script>
         function calculate() {
@@ -108,4 +135,3 @@
     </script>
 </body>
 </html>
-
