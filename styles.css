@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh; /* Use min-height to ensure content is visible on smaller screens */
     box-sizing: border-box;
 }
 
@@ -17,6 +17,7 @@ body {
 
 h1 {
     color: #333;
+    font-size: 24px; /* Use relative units for font size */
 }
 
 label {
@@ -73,10 +74,12 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
     input {
         width: 100%;
         max-width: none;
-    }
-}
     }
 }
