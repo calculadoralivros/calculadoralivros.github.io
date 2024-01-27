@@ -20,26 +20,26 @@ h1 {
 }
 
 label {
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: 0.625em;
+    font-size: 1.125em;
     color: #333;
 }
 
 input {
-    padding: 8px;
-    font-size: 16px;
+    padding: 0.5em;
+    font-size: 1.125em;
     width: 80%;
-    max-width: 300px;
+    max-width: 18.75em;
 }
 
 button {
     background-color: #4caf50;
     color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 0.625em 1.25em;
+    font-size: 1.125em;
     border: none;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 0.625em;
 }
 
 button:hover {
@@ -47,14 +47,14 @@ button:hover {
 }
 
 p {
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 1.25em;
+    margin-top: 1.25em;
     color: #333;
 }
 
 .disclaimer {
-    font-size: 12px;
-    margin-top: 20px;
+    font-size: 0.75em;
+    margin-top: 1.25em;
     color: #666;
 }
 
@@ -62,17 +62,17 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 0.625em;
+    margin-top: 1.25em;
 }
 
 .image-container img {
-    width: 70px;
+    width: 4.375em;
     height: auto;
-    max-height: 100px;
+    max-height: 6.25em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5em) {
     input {
         width: 100%;
         max-width: none;
