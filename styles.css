@@ -11,15 +11,6 @@ body {
     box-sizing: border-box;
 }
 
-.container {
-    max-width: 800px; /* Adjust the max-width as needed */
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    border: 1px solid #ddd; /* Add a border for visual separation */
-    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
-}
-
 * {
     box-sizing: border-box;
 }
@@ -85,5 +76,7 @@ p {
     input {
         width: 100%;
         max-width: none;
+    }
+}
     }
 }
