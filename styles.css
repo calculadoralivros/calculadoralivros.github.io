@@ -31,7 +31,7 @@ input {
     font-size: 16px;
     width: 80%;
     max-width: 300px;
-    border: 10px solid #ccc; /* Added border all around */
+    border: 10px; /* Added border all around */
     box-sizing: border-box; /* Ensure that the border is included in the width */
 }
 
