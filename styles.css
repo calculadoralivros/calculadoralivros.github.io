@@ -74,6 +74,12 @@ p {
     height: auto;
     max-height: 100px;
 }
+.subtitle {
+    font-size: 14px; /* Adjust the font size as per your preference */
+    color: #666; /* Adjust the color as per your preference */
+    margin-top: 5px; /* Adjust the top margin as per your preference */
+    text-align: center; /* Center the text */
+}
 
 @media screen and (max-width: 600px) {
     h1 {
