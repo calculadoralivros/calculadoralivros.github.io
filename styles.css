@@ -80,6 +80,14 @@ p {
     margin-top: 5px; /* Adjust the top margin as per your preference */
     text-align: center; /* Center the text */
 }
+/* Add this style for the section title */
+.section-title {
+    font-size: 24px; /* Adjust the font size as per your preference */
+    color: #333; /* Adjust the color as per your preference */
+    margin-bottom: 10px; /* Adjust the bottom margin as per your preference */
+    text-align: center; /* Center the text */
+}
+
 
 @media screen and (max-width: 600px) {
     h1 {
