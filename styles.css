@@ -1,8 +1,8 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0;
-    margin: 20px;
-    padding: 0;
+    margin: 0;
+    padding: 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,36 +16,49 @@ body {
 }
 
 h1, h2 {
-    color: #333;
-    font-size: 24px;
+    color: #222;
     text-align: center;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
 }
 
 label {
     margin-top: 10px;
     font-size: 18px;
-    color: #333;
+    color: #222;
 }
 
 input {
-    padding: 8px 15px;
+    padding: 10px 15px;
     font-size: 16px;
     width: 80%;
     max-width: 300px;
     min-width: 50px;
     text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
 
 button {
     background-color: #4caf50;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 16px;
     border: none;
     cursor: pointer;
     margin-top: 10px;
     display: block;
-    margin: 10px auto; /* Centers the button */
+    margin: 10px auto;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -55,13 +68,14 @@ button:hover {
 p {
     font-size: 20px;
     margin-top: 20px;
-    color: #333;
+    color: #222;
     text-align: center;
+    line-height: 1.6;
 }
 
 #custoAzoresMadeira {
     font-weight: bold;
-    color: #d35400; /* Darker orange to distinguish it */
+    color: #d35400;
     margin-top: 5px;
 }
 
@@ -84,6 +98,8 @@ p {
     width: 70px;
     height: auto;
     max-height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
 .subtitle {
@@ -95,10 +111,12 @@ p {
 
 .section-title {
     font-size: 24px;
-    color: #333;
+    color: #222;
     margin-top: 20px;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
     text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
 }
 
 /* Responsive adjustments for small screens */
@@ -110,7 +128,7 @@ p {
     input {
         width: 100%;
         max-width: none;
-        padding: 8px;
+        padding: 10px;
     }
 
     button {
