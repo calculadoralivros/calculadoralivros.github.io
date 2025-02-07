@@ -34,7 +34,7 @@ function calculate() {
         document.getElementById("custo").innerText = 
             "Custo: " + roundToDecimal(finalResultAbove2000, 2) + " € com IVA (Portugal Continental)";
         document.getElementById("custoAzoresMadeira").innerText = 
-            "Custo: " + roundToDecimal(finalResultAzoresMadeira, 2) + " € com IVA (Envio para as Ilhas Açores e Madeira)";
+            "Custo: " + roundToDecimal(finalResultAzoresMadeira, 2) + " € com IVA (Açores e Madeira)";
         
         // Make the Custo bold for input values above 2000
         document.getElementById("custo").style.fontWeight = "bold";
