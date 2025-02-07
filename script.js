@@ -55,8 +55,3 @@ document.getElementById("inputValue").addEventListener("keyup", function(event) 
         calculate();
     }
 });
-
-            if (event.key === "Enter") {
-                calculate();
-            }
-        });
