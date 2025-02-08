@@ -108,6 +108,12 @@ p {
     margin-top: 5px;
     text-align: center;
 }
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adds space between links */
+    margin-top: 10px;
+}
 
 .section-title {
     font-size: 24px;
@@ -118,15 +124,13 @@ p {
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
 }
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* Adds space between links */
-    margin-top: 10px;
-}
 .social-media-section {
     text-align: center;
     margin-top: 20px;
+}
+.social-links img {
+    width: 40px; /* Adjust as needed */
+    height: auto;
 }
 
 
