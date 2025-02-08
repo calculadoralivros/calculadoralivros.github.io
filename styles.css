@@ -118,6 +118,17 @@ p {
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
 }
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adds space between links */
+    margin-top: 10px;
+}
+.social-media-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
 
 /* Responsive adjustments for small screens */
 @media screen and (max-width: 600px) {
