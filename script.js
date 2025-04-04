@@ -50,8 +50,6 @@ function roundToDecimal(value, decimalPlaces) {
     return Math.round(value * multiplier) / multiplier;
 }
 
-document.getElementById("inputValue").addEventListener("keyup", function(event) {
-    if (event.key === "Enter") {
-        calculate();
-    }
+document.getElementById("inputValue").addEventListener("input", function () {
+    calculate();
 });
