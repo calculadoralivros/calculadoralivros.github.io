@@ -155,16 +155,3 @@ p {
         font-size: 18px;
     }
 }
-
-.apoio-section {
-    margin-top: 30px;
-    padding: 15px;
-    border: 2px dashed #0073e6;
-    border-radius: 10px;
-    background-color: #f0f8ff;
-    text-align: center;
-}
-
-.apoio-section h2 {
-    color: #0073e6;
-}
