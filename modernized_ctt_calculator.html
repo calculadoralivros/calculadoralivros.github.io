@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NH82SNY9PQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-NH82SNY9PQ');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimized Meta Tags -->
+    <meta name="description" content="Calculadora gratuita e atualizada para calcular preços CTT correio editorial de livros. Envie livros usados em Portugal com os melhores preços. Descubra quanto custa enviar livros pelos CTT em 2025.">
+    <meta name="keywords" content="enviar livros CTT, correio editorial livros, preços CTT livros, calculadora CTT">
+    <meta name="author" content="Calculadora CTT Livros">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Calculadora CTT Livros - Preços Correio Editorial 2025">
+    <meta property="og:description" content="Descubra instantaneamente quanto custa enviar livros pelos CTT com correio editorial. Calculadora gratuita e sempre atualizada.">
+    <meta property="og:url" content="https://calculadoralivros.github.io/">
+    <meta property="og:image" content="https://calculadoralivros.github.io/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Calculadora CTT Livros - Preços Correio Editorial 2025">
+    <meta name="twitter:description" content="Calculadora gratuita para preços CTT de envio de livros. Correio editorial sempre atualizado.">
+    
+    <title>Calculadora CTT Livros - Preços Correio Editorial Nacional 2025</title>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://calculadoralivros.github.io/">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Calculadora CTT Livros",
+        "description": "Calculadora para calcular preços de correio editorial CTT para envio de livros em Portugal",
+        "url": "https://calculadoralivros.github.io/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR"
+        },
+        "provider": {
+            "@type": "Organization",
+            "name": "Calculadora CTT Livros"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #2d3748;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .calculator-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: fadeInUp 0.6s ease-out;
+            margin-bottom: 2rem;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .header h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+        
+        .header .subtitle {
+            color: #718096;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        
+        .input-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .input-label {
+            display: block;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+        }
+        
+        .input-wrapper {
+            position: relative;
+        }
+        
+        .weight-input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            font-size: 1.1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 16px;
+            background: #ffffff;
+            transition: all 0.2s ease;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .weight-input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            transform: translateY(-1px);
+        }
+        
+        .weight-input::placeholder {
+            color: #a0aec0;
+            font-weight: 400;
+        }
+        
+        .input-suffix {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #718096;
+            font-weight: 600;
+            pointer-events: none;
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            flex: 1;
+            padding: 0.875rem 1.5rem;
+            border: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-clear {
+            background: #f7fafc;
+            color: #4a5568;
+            border: 2px solid #e2e8f0;
+        }
+        
+        .btn-clear:hover {
+            background: #edf2f7;
+            transform: translateY(-1px);
+        }
+        
+        .results-section {
+            min-height: 120px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .result-card {
+            background: linear-gradient(135deg, #48bb78, #38a169);
+            border-radius: 16px;
+            padding: 1.5rem;
+            color: white;
+            text-align: center;
+            margin-bottom: 1rem;
+            transform: scale(0.95);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .result-card.show {
+            transform: scale(1);
+            opacity: 1;
+        }
+        
+        .result-card.azores {
+            background: linear-gradient(135deg, #ed8936, #dd6b20);
+        }
+        
+        .result-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .result-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .error-message {
+            background: #fed7d7;
+            color: #c53030;
+            padding: 1rem;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        .info-section {
+            background: #f7fafc;
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            border-left: 4px solid #667eea;
+        }
+        
+        .info-title {
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+        }
+        
+        .info-text {
+            color: #4a5568;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .quick-links {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .quick-link {
+            display: block;
+            padding: 1rem;
+            background: white;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 600;
+            text-align: center;
+            border: 2px solid #e2e8f0;
+            transition: all 0.2s ease;
+            font-size: 0.9rem;
+        }
+        
+        .quick-link:hover {
+            border-color: #667eea;
+            color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .update-date {
+            color: #718096;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: #f7fafc;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        
+        .social-link:hover {
+            background: #667eea;
+            transform: translateY(-2px);
+        }
+        
+        .social-link img {
+            width: 20px;
+            height: 20px;
+        }
+        
+        /* Loading State */
+        .loading {
+            display: none;
+            text-align: center;
+            color: #718096;
+            font-style: italic;
+        }
+        
+        /* PayPal Promo Section */
+        .paypal-promo {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.6s ease-out 0.3s both;
+        }
+        
+        .paypal-promo h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1a202c;
+            text-align: center;
+        }
+        
+        .paypal-promo h3 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+        
+        .paypal-promo p {
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: #4a5568;
+            text-align: center;
+        }
+        
+        .paypal-promo ol {
+            margin: 1rem 0;
+            text-align: left;
+            padding-left: 1.5rem;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #4a5568;
+        }
+        
+        .paypal-promo ol li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .paypal-promo a {
+            color: #667eea;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+        
+        .paypal-promo a:hover {
+            color: #5a67d8;
+        }
+        
+        /* Mobile Optimizations */
+        @media (max-width: 640px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .calculator-card, .paypal-promo {
+                padding: 2rem 1.5rem;
+                border-radius: 20px;
+            }
+            
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .paypal-promo h2 {
+                font-size: 1.3rem;
+            }
+            
+            .paypal-promo h3 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-card">
+            <div class="header">
+                <h1>Custo Correio Editorial Nacional CTT - Livros</h1>
+                <p class="subtitle">Preços de correio editorial para envio de livros</p>
+            </div>
+
+            <div class="input-section">
+                <label for="weightInput" class="input-label">Peso em gramas:</label>
+                <div class="input-wrapper">
+                    <input 
+                        type="number" 
+                        id="weightInput" 
+                        class="weight-input"
+                        placeholder="p. ex. 567"
+                        min="1"
+                        max="5000"
+                        autocomplete="off"
+                    />
+                    <span class="input-suffix">gramas</span>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="btn btn-clear" id="clearBtn">
+                    Limpar
+                </button>
+            </div>
+
+            <div class="results-section" id="resultsSection">
+                <div class="loading" id="loading">Calculando...</div>
+            </div>
+
+
+
+            <div class="quick-links">
+                <a href="envio.html" class="quick-link">
+                    📦 Como embalar um livro para correio editorial
+                </a>
+            </div>
+
+            <div class="footer">
+                <p class="update-date">Preçário CTT atualizado a 1 de fevereiro de 2025</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61553698780213" target="_blank" class="social-link">
+                        <img src="facebook-icon.png" alt="Facebook" />
+                    </a>
+                    <a href="https://tradestories.pt/user/danielsilva-2" target="_blank" class="social-link">
+                        <img src="tradestories-icon.png" alt="TradeStories" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PayPal Promo Section -->
+        <div class="paypal-promo">
+            <h2>Ganhe 10€ fácil e rápido com PayPal!</h2>
+            <p>O PayPal é uma forma segura e prática de pagar online! 🔒</p>
+            <p>
+                Se morares em Portugal, podes ganhar 10€ de bónus ao criares uma conta e fazeres uma compra mínima de 5€ dentro de 30 dias! 🛍️<br/>
+                Mesmo que não precises de comprar nada, podes usar o bónus para enviar dinheiro a alguém com PayPal! 💸💙
+            </p>
+            <h3>Como receber os teus 10€?</h3>
+            <ol>
+                <li>Regista-te no PayPal por este link: <a href="https://py.pl/JFLXI" target="_blank" rel="noopener noreferrer">https://py.pl/JFLXI</a> ✍️</li>
+                <li>Adiciona saldo à tua conta (Multibanco, Homebanking, Revolut ou cartão)💰</li>
+                <li>Faz uma compra de pelo menos 5€ dentro de 30 dias após o registo 🛒</li>
+                <li>O bónus de 10€ será adicionado à tua conta até 14 dias depois da compra e podes usá-lo para descontos em futuras compras! 🎁</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        // Enhanced calculator with better UX
+        function roundToDecimal(value, decimalPlaces) {
+            const multiplier = Math.pow(10, decimalPlaces);
+            return Math.round(value * multiplier) / multiplier;
+        }
+
+        function showLoading() {
+            document.getElementById('loading').style.display = 'block';
+            setTimeout(hideLoading, 300); // Simulated calculation time
+        }
+
+        function hideLoading() {
+            document.getElementById('loading').style.display = 'none';
+        }
+
+        function displayResult(price, label, isAzores = false) {
+            const resultsSection = document.getElementById('resultsSection');
+            const resultCard = document.createElement('div');
+            resultCard.className = `result-card ${isAzores ? 'azores' : ''}`;
+            
+            resultCard.innerHTML = `
+                <div class="result-price">${price} €</div>
+                <div class="result-label">${label}</div>
+            `;
+            
+            resultsSection.appendChild(resultCard);
+            
+            // Animate in
+            setTimeout(() => {
+                resultCard.classList.add('show');
+            }, 100);
+        }
+
+        function displayError(message) {
+            const resultsSection = document.getElementById('resultsSection');
+            resultsSection.innerHTML = `<div class="error-message">${message}</div>`;
+        }
+
+        function clearResults() {
+            const resultsSection = document.getElementById('resultsSection');
+            resultsSection.innerHTML = '<div class="loading" id="loading">Calculando...</div>';
+        }
+
+        function calculate() {
+            const input = document.getElementById('weightInput').value.trim();
+            
+            clearResults();
+            
+            if (input === '') {
+                return;
+            }
+
+            const weight = parseFloat(input);
+            
+            if (isNaN(weight) || weight <= 0) {
+                displayError('⚠️ Por favor, insira um peso válido');
+                return;
+            }
+            
+            if (weight > 5000) {
+                displayError('⚠️ Peso máximo: 5000 gramas');
+                return;
+            }
+
+            showLoading();
+
+            let result = 0;
+            
+            // CTT Editorial pricing formula (updated 2025)
+            if (weight <= 100) {
+                result = 0.294 + (1.113 * weight) / 1000;
+                displayResult(roundToDecimal(result, 2), 'Custo');
+            } else if (weight <= 250) {
+                result = 0.191 + (2.134 * weight) / 1000;
+                displayResult(roundToDecimal(result, 2), 'Custo');
+            } else if (weight <= 500) {
+                result = 0.139 + (2.684 * weight) / 1000;
+                displayResult(roundToDecimal(result, 2), 'Custo');
+            } else if (weight <= 2000) {
+                result = 1.509 + (0.623 * weight) / 1000;
+                displayResult(roundToDecimal(result, 2), 'Custo');
+            } else if (weight <= 5000) {
+                const thousands = Math.floor(weight / 1000);
+                const result2000 = 1.509 + (0.623 * 2000) / 1000;
+                const resultContinental = (result2000 + ((thousands - 1) * 1.28)) * 1.23;
+                const resultIslands = (result2000 + ((thousands - 1) * 2.83)) * 1.23;
+                
+                displayResult(roundToDecimal(resultContinental, 2), 'Custo: com IVA (Portugal Continental)');
+                displayResult(roundToDecimal(resultIslands, 2), 'Custo: com IVA (Açores e Madeira)', true);
+            }
+        }
+
+        // Event listeners
+        document.getElementById('weightInput').addEventListener('input', calculate);
+        
+        document.getElementById('clearBtn').addEventListener('click', function() {
+            document.getElementById('weightInput').value = '';
+            clearResults();
+            document.getElementById('weightInput').focus();
+        });
+
+        // Focus on input when page loads
+        window.addEventListener('load', function() {
+            document.getElementById('weightInput').focus();
+        });
+
+        // Add keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('clearBtn').click();
+            }
+        });
+    </script>
+</body>
+</html>
